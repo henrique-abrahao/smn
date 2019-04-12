@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width = device-width, initial-scale = 1">
+	<script type="text/javascript" src="jogo.js"></script>
+	<link rel="stylesheet" href="jogo.css">
+	<title>Jogo Da velha</title>
+</head>
+
+<body style="background-color:rgb(2, 51, 83)" onload="iniciar()">
+	<h1 style="color:white">JOGO DA VELHA</h1>
+
+	<div style="text-align: center">
+		<input type="button" onclick='comecar(1)' id="comecar" style="margin-bottom: 12px" value="Comecar"></button>
+		<button onclick='reiniciar()'>Resetar Placar</button>
+	</div>
+
+
+	<div id="placar" style="position:absolute; color: white;">
+		<h2 id='player1'>Player 1: 0</h2>
+		<h2 id='player2'>Player 2: 0</h2>
+	</div>
+	<span id='container'></span>
+	
+	<table id='tabela'>
+
+		<tr>
+			<td onclick="teste1()" id='td1'></td>
+			<td onclick="teste2()" id='td2'></td>
+			<td onclick="teste3()" id='td3'></td>
+		</tr>
+		<tr>
+			<td onclick="teste4()" id='td4'></td>
+			<td onclick="teste5()" id='td5'></td>
+			<td onclick="teste6()" id='td6'></td>
+		</tr>
+		<tr>
+			<td onclick="teste7()" id='td7'></td>
+			<td onclick="teste8()" id='td8'></td>
+			<td onclick="teste9()" id='td9'></td>
+		</tr>
+	</table>
+
+	
+
+	<h2 id='vencendor' style="text-align: center"></h2>
+
+</body>
+
+</html>
